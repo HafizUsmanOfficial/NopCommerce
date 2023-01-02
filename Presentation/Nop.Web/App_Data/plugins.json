@@ -1,0 +1,18 @@
+﻿{
+  "InstalledPluginNames": [
+    "Shipping.FedEx",
+    "Shipping.FixedByWeightByTotal",
+    "Misc.SendinBlue",
+    "Payments.CheckMoneyOrder",
+    "Pickup.PickupInStore",
+    "Payments.CashOnDelivery"
+  ],
+  "PluginNamesToUninstall": [],
+  "PluginNamesToDelete": [],
+  "PluginNamesToInstall": [
+    {
+      "Item1": "Shipping.FixedByWeightByTotal",
+      "Item2": "693ca764-d1ac-4108-8e27-828e9ccfe05e"
+    }
+  ]
+}

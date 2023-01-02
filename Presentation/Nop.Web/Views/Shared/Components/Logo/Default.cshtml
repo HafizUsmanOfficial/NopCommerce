@@ -1,0 +1,40 @@
+﻿@model LogoModel
+@*<a href="/word-signs-dev">*@
+@*<a @(@Html.Raw($" href=\"{Url.RouteUrl("Homepage")}\""))</a>*@
+
+
+@inject Nop.Core.IWebHelper webHelper
+
+
+@*Nv 6 test
+    <a href="@Url.RouteUrl("HomePageProd")">
+        <img title="" alt="@Model.StoreName" src="@Model.LogoPath">
+    </a>*@
+
+
+@*Works
+    <a href="@Url.RouteUrl("NewsArchive")">*@
+
+@* Ref
+    Url.RouteUrl("AddProductToCart-Details", new {productId = Model.ProductId, shoppingCartTypeId = (int) ShoppingCartType.ShoppingCart}*@
+
+@*return RedirectToRoute("Product", new { SeName = _urlRecordService.GetSeName(parentGroupedProduct) });*@
+
+
+@*Url.RouteUrl("Product", new { SeName = Model.SeName }, webHelper.CurrentRequestProtocol).ToLowerInvariant()
+*@
+
+<a href="@Url.RouteUrl("Product", new { SeName = "Word-Signs-Dev" }, webHelper.CurrentRequestProtocol).ToLowerInvariant()">
+    <img title="" alt="@Model.StoreName" src="@Model.LogoPath">
+</a>
+
+
+
+@*
+    Default
+
+    @model LogoModel
+    <a href="@Url.RouteUrl("HomePage")">
+        <img title="" alt="@Model.StoreName" src="@Model.LogoPath">
+    </a>
+*@
